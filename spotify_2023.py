@@ -5,7 +5,7 @@ import pandas as pd
 
 strDataset = "https://github.com/Caendy/DATANVI-Render-Draft/blob/main/datasets/spotify-2023.csv"
 
-dfDataset = pd.read_csv(strDataset, encoding = "ISO-8859-1")
+dfDataset = pd.read_csv(strDataset, on_bad_lines='skip')
 dfDataset.head()
 
 # Filters the dataset to get the number of songs per [released_month].
