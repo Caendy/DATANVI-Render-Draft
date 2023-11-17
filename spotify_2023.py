@@ -36,6 +36,7 @@ dfData2 = dfData2.pivot(index = "released_year", columns = "released_month", val
 dfData2
 
 application = Dash(__name__, external_stylesheets = [dbc.themes.BOOTSTRAP])
+server = application.server
 
 # Provided content. Do NOT alter.
 cmpntTitle = html.H1(children = "SPOTIFY 2023", id = "Title")
@@ -110,6 +111,10 @@ application.layout = html.Div([cmpntTitle,
                                         dbc.Col(dbc.Row([cmpntGraphTitle2, cmpntGraph2]))])])
 
 # Run the application.
-if __name__ == "__main__":
+# if __name__ == "__main__":
   # application.run_server(port = 8051)
-  server = application.server
+  # server = application.server
+
+if __name__ == "__main__":
+    application.run_server(debug=True)
+    
