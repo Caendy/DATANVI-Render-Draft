@@ -3,7 +3,7 @@ import dash_bootstrap_components as dbc
 import plotly.express as px
 import pandas as pd
 
-strDataset = "datasets/spotify-2023.csv"
+strDataset = "https://github.com/Caendy/DATANVI-Render-Draft/blob/main/datasets/spotify-2023.csv"
 
 dfDataset = pd.read_csv(strDataset, encoding = "ISO-8859-1")
 dfDataset.head()
@@ -111,4 +111,5 @@ application.layout = html.Div([cmpntTitle,
 
 # Run the application.
 if __name__ == "__main__":
-  application.run_server(port = 8051)
+  # application.run_server(port = 8051)
+  server = application.server
