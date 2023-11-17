@@ -105,7 +105,7 @@ cmpntGraph2 = dcc.Graph(figure = graphData2, id = "Cmpnt-Graph-2")
 
 # [TODO] : Prepare your personal graph here. Do NOT forget to add it to the application layout.
 
-application = dash.Dash(__name__, assets_external_path = "https://raw.githubusercontent.com/Caendy/DATANVI-Render-Draft/main/assets/styles.css")
+application = dash.Dash(__name__, assets_external_path = "https://github.com/Caendy/DATANVI-Render-Draft/tree/main/assets/")
 server = application.server
 
 
