@@ -3,9 +3,9 @@ import dash_bootstrap_components as dbc
 import plotly.express as px
 import pandas as pd
 
-strDataset = "https://github.com/Caendy/DATANVI-Render-Draft/blob/main/datasets/spotify-2023.csv"
+strDataset = "https://raw.githubusercontent.com/Caendy/DATANVI-Render-Draft/main/datasets/spotify-2023.csv"
 
-dfDataset = pd.read_csv(strDataset, on_bad_lines='skip')
+dfDataset = pd.read_csv(strDataset, encoding = "ISO-8859-1")
 dfDataset.head()
 
 # Filters the dataset to get the number of songs per [released_month].
