@@ -106,8 +106,8 @@ cmpntGraph2 = dcc.Graph(figure = graphData2, id = "Cmpnt-Graph-2")
 # [TODO] : Prepare your personal graph here. Do NOT forget to add it to the application layout.
 
 application = dash.Dash(__name__)
-@application.server.route("/static/styles/styles.css")
 server = application.server
+server.route("/static/styles/styles.css")
 
 
 # Organize the layout.
