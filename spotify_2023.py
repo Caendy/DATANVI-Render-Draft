@@ -1,3 +1,4 @@
+import dash
 from dash import Dash, dcc, html, Input, Output, State
 import dash_bootstrap_components as dbc
 import plotly.express as px
