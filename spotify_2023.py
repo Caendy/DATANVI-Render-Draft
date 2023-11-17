@@ -104,6 +104,10 @@ cmpntGraph2 = dcc.Graph(figure = graphData2, id = "Cmpnt-Graph-2")
 
 # [TODO] : Prepare your personal graph here. Do NOT forget to add it to the application layout.
 
+application = dash.Dash(__name__)
+server = application.server
+
+
 # Organize the layout.
 application.layout = html.Div([cmpntTitle,
                                html.Hr(),
@@ -111,10 +115,6 @@ application.layout = html.Div([cmpntTitle,
                                         dbc.Col(dbc.Row([cmpntGraphTitle2, cmpntGraph2]))])])
 
 # Run the application.
-# if __name__ == "__main__":
-  # application.run_server(port = 8051)
-  # server = application.server
-
 if __name__ == "__main__":
     application.run_server(debug=True)
     
