@@ -111,4 +111,5 @@ application.layout = html.Div([cmpntTitle,
 
 # Run the application.
 if __name__ == "__main__":
-  application.run_server(port = 8051)
+  # application.run_server(port = 8051)
+  server = app.server
